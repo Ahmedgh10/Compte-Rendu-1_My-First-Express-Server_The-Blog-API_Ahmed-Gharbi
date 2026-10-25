@@ -1,15 +1,18 @@
 {
   "name": "mern-blog",
-  "version": "1.0.0",
-  "description": "MERN Session 3 - MongoDB Atlas, Mongoose and async/await",
+  "version": "2.0.0",
+  "description": "MERN Session 4 - JWT authentication, bcrypt and route protection",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "make-admin": "node src/scripts/makeAdmin.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.0"
   },
   "devDependencies": {
